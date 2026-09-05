@@ -1,0 +1,43 @@
+--- app/src/main/java/yangfentuozi/dsusideloaderplus/core/StorageManager.kt
++++ app/src/main/java/yangfentuozi/dsusideloaderplus/core/StorageManager.kt
+@@ -25,6 +25,7 @@
+ 
+     object Constants {
+         const val WORKSPACE_FOLDER = "workspace_dsuhelper"
++        const val DOWNLOADS_FOLDER = "downloads"
+     }
+ 
+     private var rwPathAllowedByUser: String = ""
+@@ -89,6 +90,21 @@
+         return workspaceFolder
+     }
+ 
++    private fun getDownloadsFolder(): DocumentFile {
++        if (rwPathAllowedByUser.isEmpty()) {
++            throw Exception("Allowed path by user is empty, ask user to allow storage permission again.")
++        }
++
++        val writeableDir =
++            DocumentFile.fromTreeUri(appContext, rwPathAllowedByUser.toUri())
++                ?: throw Exception("Downloads folder cannot be null.")
++
++        val downloadsFolder = writeableDir.findFile(Constants.DOWNLOADS_FOLDER)
++            ?: writeableDir.createDirectory(Constants.DOWNLOADS_FOLDER)!!
++
++        return downloadsFolder
++    }
++
+     fun cleanWorkspaceFolder(deleteAlsoGzFile: Boolean) {
+         for (file in getWorkspaceFolder().listFiles()) {
+             if (deleteAlsoGzFile || !file.name.toString().endsWith("gz")) {
+@@ -158,6 +174,10 @@
+         return getWorkspaceFolder().createFile("application/octet-stream", filename)!!
+     }
+ 
++    fun createDownloadFile(filename: String): DocumentFile {
++        return getDownloadsFolder().createFile("application/octet-stream", filename)!!
++    }
++
+     fun getUriSafe(uri: Uri): Uri {
+         if (isPathWrong(uri)) {
+             return copyFileToSafFolder(uri)
