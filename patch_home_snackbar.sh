@@ -1,1 +1,0 @@
-sed -i 's/val uriHandler = LocalUriHandler.current/val uriHandler = LocalUriHandler.current\n    val aboutUiState by aboutViewModel.uiState.collectAsStateWithLifecycle()\n    val snackbarHostState = remember { SnackbarHostState() }\n    val coroutineScope = rememberCoroutineScope()/g' app/src/main/java/yangfentuozi/dsusideloaderplus/ui/screen/home/HomeScreen.kt

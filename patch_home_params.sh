@@ -1,1 +1,0 @@
-sed -i 's/homeViewModel: HomeViewModel = hiltViewModel(),/homeViewModel: HomeViewModel = hiltViewModel(),\n    aboutViewModel: AboutViewModel = hiltViewModel(),/g' app/src/main/java/yangfentuozi/dsusideloaderplus/ui/screen/home/HomeScreen.kt
