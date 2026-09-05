@@ -1,0 +1,6 @@
+{
+  "name": "DSU Sideloader Plus Pro Max Ultra",
+  "description": "DSU Sideloader Plus Pro Max Ultra with custom features",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

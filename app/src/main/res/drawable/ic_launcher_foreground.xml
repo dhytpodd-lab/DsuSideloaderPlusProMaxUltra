@@ -1,0 +1,63 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Android head (Green #3DDC84) -->
+    <path
+        android:fillColor="#41DF85"
+        android:pathData="M54,30 C40,30 30,40 29,52 L79,52 C78,40 68,30 54,30 Z" />
+        
+    <!-- Eyes (Dark #151A21) -->
+    <path
+        android:fillColor="#151A21"
+        android:pathData="M43,43 A3,3 0,1,1 43,49 A3,3 0,1,1 43,43 M65,43 A3,3 0,1,1 65,49 A3,3 0,1,1 65,43" />
+        
+    <!-- Antennae (Green #41DF85) -->
+    <path
+        android:strokeColor="#41DF85"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M38,20 L45,30 M70,20 L63,30" />
+
+    <!-- Tray (White #FFFFFF) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:fillColor="#00000000"
+        android:pathData="M27,45 L21,45 C16,45 14,47 14,53 C14,59 16,61 21,61 L87,61 C92,61 94,59 94,53 C94,47 92,45 87,45 L81,45" />
+
+    <!-- DSU text paths (White) -->
+    <!-- D -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,68 h6 c6,0 11,3 11,9 c0,6 -5,9 -11,9 h-6 v-18 z M36,72 v10 h2 c4,0 7,-1.5 7,-5 c0,-3.5 -3,-5 -7,-5 h-2 z" />
+    <!-- S -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M57,72 c-1.5,-1.5 -3.5,-2.5 -6,-2.5 c-3,0 -5,1.5 -5,3.5 c0,2.5 3,3.5 7,4.5 c5,1.5 8,3.5 8,8 c0,5 -4,8 -10,8 c-4,0 -8,-1.5 -10,-4 l3,-3.5 c2,2.5 5,3.5 7,3.5 c3,0 5,-1.5 5,-3.5 c0,-2.5 -3,-3.5 -7,-4.5 c-5,-1.5 -8,-3.5 -8,-8 c0,-5 4,-8 10,-8 c3,0 6.5,1.5 8,3 l-3,3.5 z" />
+    <!-- U -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M68,68 v10 c0,4 2.5,5.5 6,5.5 c3.5,0 6,-1.5 6,-5.5 v-10 h4.5 v10 c0,6 -4.5,9.5 -10.5,9.5 c-6,0 -10.5,-3.5 -10.5,-9.5 v-10 h4.5 z" />
+
+    <!-- SIDELOADER stylized dashes (Green #41DF85) -->
+    <path
+        android:fillColor="#41DF85"
+        android:pathData="
+        M32,90 h3 v2 h-3 z
+        M37,90 h3 v2 h-3 z
+        M42,90 h3 v2 h-3 z
+        M47,90 h3 v2 h-3 z
+        M52,90 h3 v2 h-3 z
+        M57,90 h3 v2 h-3 z
+        M62,90 h3 v2 h-3 z
+        M67,90 h3 v2 h-3 z
+        M72,90 h3 v2 h-3 z
+        M77,90 h3 v2 h-3 z
+        " />
+        
+</vector>

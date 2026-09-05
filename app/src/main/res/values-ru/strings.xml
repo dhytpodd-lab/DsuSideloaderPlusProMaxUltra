@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- We do not translate app_name to keep it exactly the same across languages -->
+    
+    <!-- Warning cards -->
+    <string name="unsupported">Не поддерживается</string>
+    <string name="device_unsupported_description">Ваше устройство не поддерживает динамические разделы (DSU требует динамические разделы).</string>
+    <string name="setup_storage">Настройка хранилища</string>
+    <string name="setup_storage_description">Вам необходимо выбрать папку для хранения файлов приложения (необходимо для временных файлов).\n\nПожалуйста, выберите или создайте новую папку и предоставьте к ней доступ.</string>
+    <string name="setup">Настроить</string>
+    <string name="storage_warning">Предупреждение о памяти</string>
+    <string name="storage_warning_description">У вас менее %1$s%% свободного места, установка завершится ошибкой, пожалуйста, освободите место.</string>
+    <string name="continue_anyway">Продолжить всё равно</string>
+    <string name="missing_permission">Отсутствует разрешение</string>
+    <string name="missing_permission_description">DSU Sideloader Plus Pro Max Ultra требует разрешение READ_LOGS (чтение logcat).\nЭто разрешение используется для получения прогресса установки и диагностики ошибок в установке DSU.\n\n** Предоставление этого разрешения может потребовать перезапуска приложения.</string>
+    <string name="granting_permission">Ожидание предоставления разрешения, пожалуйста, подождите…</string>
+    <string name="unlocked_bl_warn">Разблокированный загрузчик</string>
+    <string name="unlocked_bl_warn_desc">DSU Sideloader Plus Pro Max Ultra требует разблокированный загрузчик, установка образов с заблокированным загрузчиком может быть опасна на некоторых устройствах. Перед использованием приложения вы: \n- ОБЯЗАНЫ разблокировать загрузчик.\n- ДОЛЖНЫ иметь возможность восстановить стоковую прошивку.\n- РЕКОМЕНДУЕТСЯ сделать полный бэкап.\nЭто приложение создано для разработчиков и продвинутых пользователей, вы были предупреждены.</string>
+
+    <!-- Installation card -->
+    <string name="select_gsi_info">Выберите файл для установки</string>
+    <string name="dsu_already_installed">Установка DSU уже присутствует.</string>
+    <string name="manage_dsu_images">Управление образами</string>
+    <string name="dsu_images">Образы DSU</string>
+    <string name="installed_dsu_images">Установленные образы DSU</string>
+    <string name="installed_dsu_image">Установленный образ DSU</string>
+    <string name="no_installed_dsu_images">Установленные образы DSU не найдены.</string>
+    <string name="add_dsu_image">Добавить образ DSU</string>
+    <string name="add_dsu_image_description">Добавить другой образ раздела в установленный DSU.</string>
+    <string name="replace_dsu_image">Заменить</string>
+    <string name="export_dsu_image">Экспорт</string>
+    <string name="delete_dsu_image">Удалить</string>
+    <string name="dsu_image_name">Имя образа</string>
+    <string name="dsu_image_prefix">Префикс образа</string>
+    <string name="dsu_image_name_error">Используйте уникальное имя из букв, цифр, точек, дефисов или подчеркиваний.</string>
+    <string name="selected_file">Выбранный файл</string>
+    <string name="file_unsupported">Неподдерживаемый файл</string>
+    <string name="add">Добавить</string>
+    <string name="clear">Очистить</string>
+    <string name="install">Установить</string>
+    <string name="update">Обновить</string>
+
+    <!-- Installation dialog -->
+    <string name="proceed_installation">Начать установку?</string>
+    <string name="proceed_installation_description">Установка будет выполнена со следующими параметрами:</string>
+
+    <!-- Discard installed DSU dialog -->
+    <string name="discard_dsu_question">Отменить установку?</string>
+    <string name="dsu_already_installed_warning">Все данные в установленном DSU будут УДАЛЕНЫ после отмены, вы уверены?</string>
+    <string name="delete_dsu_image_question">Удалить образ DSU?</string>
+    <string name="delete_dsu_image_warning">Установленный образ DSU "%1$s" будет удалён. Это может сделать установленный DSU незагружаемым.</string>
+    <string name="add_dsu_image_question">Добавить образ DSU?</string>
+    <string name="add_dsu_image_warning">Выбранный файл будет добавлен в установленный DSU как новый резервный образ.</string>
+    <string name="replace_dsu_image_question">Установить образ для замены?</string>
+    <string name="replace_dsu_image_warning">Выбранный файл заменит целевой образ в установленном DSU.</string>
+
+    <!-- Preparation -->
+    <string name="decompressing_gz">Извлечение gz файла…</string>
+    <string name="decompressing_xz">Извлечение xz файла…</string>
+    <string name="compressing_to_gz">Подготовка файла образа…</string>
+    <string name="extracting_file">Извлечение файла…</string>
+    <string name="copying_file">Копирование файла…</string>
+    <string name="processing">Обработка…</string>
+
+    <!-- Installation -->
+    <string name="installation_prompt">Запрошена установка, ожидание подтверждения пользователя для продолжения..</string>
+    <string name="creating_partition">Создание раздела %1$s</string>
+    <string name="installing_partition">Обработка раздела %1$s…</string>
+    <string name="installing">Установка…</string>
+    <string name="loading_dsu_images">Загрузка образов DSU…</string>
+    <string name="adding_dsu_image">Добавление образа %1$s…</string>
+    <string name="exporting_dsu_image">Экспорт образа %1$s…</string>
+    <string name="replacing_dsu_image">Замена образа %1$s…</string>
+    <string name="deleting_dsu_image">Удаление образа %1$s…</string>
+
+    <!-- ADB install -->
+    <string name="require_adb_cmd_to_continue">Подготовка завершена, для продолжения установки требуется команда.</string>
+    <string name="see_commands">Показать команды</string>
+
+    <!-- Installation errors -->
+    <string name="already_running_dsu">Установка DSU во время работы запущенного DSU не поддерживается, пожалуйста, перезагрузите устройство в основную ОС.</string>
+    <string name="discard_dsu_otg">Установка DSU уже присутствует, отменить для продолжения?\n\n**Все данные в установке DSU будут удалены.</string>
+    <string name="discarding">Отмена…</string>
+    <string name="discard_dsu">Отменить DSU</string>
+
+    <string name="allocation_error">Ошибка выделения памяти</string>
+    <string name="allocation_error_description">Выделение памяти на SD-карте не работает, есть несколько исправлений, которые вы можете попробовать:\n - Установить модуль Magisk для DSU Sideloader Plus Pro Max Ultra.\n - Отмонтировать SD-карту (можно настроить в настройках).</string>
+    <string name="allocation_error_action">Отмонтировать SD и повторить</string>
+    <string name="storage_error">Ошибка хранилища</string>
+    <string name="storage_error_description">Android требует как минимум %1$s%% свободного места для продолжения установки, освободите место и повторите попытку.</string>
+    <string name="fs_features_error">Функции ФС недоступны</string>
+    <string name="fs_features_error_description">Ваше ядро, скорее всего, регистрирует f2fs по пути, отличному от ожидаемого демоном GSI, есть несколько исправлений, которые вы можете попробовать:\n - Установить модуль Magisk для DSU Sideloader Plus Pro Max Ultra.\n - Сменить ядро.</string>
+    <string name="selinux_error">Ошибка SELinux</string>
+    <string name="selinux_error_description">Похоже, что запреты SELinux мешают установке DSU. Возможные решения:\n - Установите модуль Magisk DSU Sideloader Plus Pro Max Ultra.\n - Отмонтируйте SD-карту, если используете её.\n - Переключите SELinux в Permissive (не рекомендуется).</string>
+    <string name="selinux_error_action">Повторить в permissive</string>
+    <string name="extents_error_title">Ошибка экстентов (extents)</string>
+    <string name="extents_error_description">На устройствах с Android 10 образы/файловая система должны иметь более 512 экстентов, вы можете попробовать:\n - Установить модуль Magisk DSU Sideloader Plus Pro Max Ultra.</string>
+    
+    <string name="failed_create_partition">Не удалось создать раздел %1$s.</string>
+    <string name="unknown_error">Неизвестная ошибка.</string>
+    <string name="dsu_image_operation_failed">Ошибка операции с образом DSU: %1$s</string>
+    <string name="error">Ошибка</string>
+    <string name="try_again">Повторить</string>
+    <string name="view_logs">Смотреть логи</string>
+    <string name="installation_canceled">Установка отменена.</string>
+
+    <string name="cancel_installation_question">Отменить установку?</string>
+    <string name="cancel_installation_description">Весь прогресс будет потерян, вы уверены?</string>
+    <string name="installation_finished_rootless">Образ успешно установлен, проверьте уведомления для загрузки в динамическую систему.</string>
+    <string name="installation_finished">Установка завершена.</string>
+    <string name="reboot_into_dsu">Перезагрузиться в DSU</string>
+
+    <!-- Userdata card -->
+    <string name="userdata_size">Размер Userdata</string>
+    <string name="userdata_size_info">Размер в гигабайтах</string>
+    <string name="allowed_userdata_allocation">Максимально доступно: %1$sGB</string>
+    <string name="preserve_userdata">Сохранить userdata</string>
+    <string name="preserve_userdata_desc">Сохранить существующие данные при обновлении DSU</string>
+
+    <!-- Image size card -->
+    <string name="image_size">Размер образа</string>
+    <string name="image_size_info">Размер в байтах</string>
+    <string name="not_recommended_option">Эта опция категорически не рекомендуется!</string>
+
+    <string name="dialog_image_size">Установить размер образа?</string>
+    <string name="dialog_image_size_description">DSU Sideloader Plus Pro Max Ultra установит этот параметр автоматически, ручная установка размера настоятельно не рекомендуется.</string>
+    <string name="set_anyway">Установить всё равно</string>
+
+    <!-- What is DSU card -->
+    <string name="what_is_dsu">Что такое DSU?</string>
+    <string name="what_is_dsu_description">DSU (Dynamic System Updates) — это функция, представленная в Android 10, которая позволяет разработчикам тестировать образы Android без изменения разделов устройства.</string>
+    <string name="view_docs">Документация</string>
+    <string name="learn_more">Узнать больше</string>
+
+    <!-- Settings screen -->
+    <string name="settings">Настройки</string>
+    <string name="experimental_feature">Экспериментальная функция</string>
+    <string name="experimental_feature_description">Эта функция находится в стадии тестирования и может быть нестабильной, вы уверены?</string>
+    <string name="builtin_installer">Встроенный установщик</string>
+    <string name="builtin_installer_description">Быстрее, использует внутренние API для прямой установки</string>
+    <string name="requires_root">Требуется root</string>
+    <string name="unmount_sd_title">Отмонтировать SD</string>
+    <string name="unmount_sd_description">Временно отмонтировать SD при установке</string>
+    <string name="warning_storage_check_title">Внимание</string>
+    <string name="warning_storage_check_description">Установка DSU зарезервирует место на вашем устройстве, отключение проверки памяти может привести к ошибкам.\nНе рекомендуется. Продолжайте только если знаете, что делаете!</string>
+    <string name="storage_check_title">Отключить проверку памяти</string>
+    <string name="storage_check_description">Отключить проверку памяти userdata, не рекомендуется</string>
+    <string name="full_logcat_logging_title">Полное логирование logcat</string>
+    <string name="full_logcat_logging_description">Логи будут записываться без фильтров, что может снизить производительность</string>
+    <string name="keep_screen_on">Не выключать экран</string>
+    <string name="developer_options">Для разработчиков</string>
+    <string name="other">Другое</string>
+    <string name="operation_mode">Режим работы</string>
+    <string name="about">О приложении</string>
+    <string name="about_description">Разработчики, библиотеки и прочее…</string>
+
+    <!-- About screen -->
+    <string name="version_info">версия %1$s (%2$d)</string>
+    <string name="check_updates_title">Проверить обновления</string>
+    <string name="check_updates_text_idle">Нажмите для проверки</string>
+    <string name="check_updates_text_found">Найдена новая версия %1$s</string>
+    <string name="check_updates_text_updated">Установлена последняя версия</string>
+    <string name="changelog">Список изменений</string>
+    <string name="download">Скачать</string>
+    <string name="application">Приложение</string>
+    <string name="developer_options_enabled">Настройки разработчика включены</string>
+    <string name="developer_options_disabled">Настройки разработчика отключены</string>
+    <string name="github_repo">Репозиторий GitHub</string>
+    <string name="github_repo_description">Исходный код на GitHub</string>
+    <string name="collaborators">Соавторы</string>
+    <string name="libraries_title">Библиотеки</string>
+    <string name="libraries_description">Библиотеки, используемые в приложении</string>
+    <string name="role_developer">Разработчик</string>
+    <string name="role_fork_developer">Разработчик форка</string>
+    <string name="role_original_developer">Оригинальный разработчик</string>
+    <string name="role_design_icon">Дизайн, иконка приложения</string>
+    <string name="translators_title">Переводчики</string>
+    <string name="translators_list">translators_list</string>
+    <string name="contributors_title">Участники</string>
+    <string name="contributors_text">Люди, которые помогли с проектом</string>
+
+    <!-- ADB screen -->
+    <string name="adb_how_to_adb_shell">Чтобы начать установку на устройствах без root, вам нужно выполнить эту команду в adb shell:</string>
+    <string name="adb_how_to_shell">Если вы запускаете adb shell без ПК (например: LADB, Shizuku Rish, WebADB), используйте эту команду:</string>
+    <string name="adb_how_to_done">После этого проверьте уведомления, чтобы следить за процессом установки, вы также можете закрыть это приложение.</string>
+    <string name="copy_text">Скопировать текст</string>
+    <string name="copied">Скопировано</string>
+
+    <!-- View logs screen -->
+    <string name="installation_logs">Логи установки</string>
+    <string name="save_logs">Сохранить логи</string>
+    <string name="saved_logs">Логи сохранены!</string>
+
+    <!-- Generic and multipurpose strings -->
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="ok">ОК</string>
+    <string name="grant">Предоставить</string>
+    <string name="refuse">Отказать</string>
+    <string name="proceed">Продолжить</string>
+    <string name="cancel">Отмена</string>
+    <string name="close">Закрыть</string>
+    <string name="mreturn">Назад</string>
+    <string name="installation">Установка</string>
+    <string name="discard">Отменить</string>
+    <string name="close_app">Закрыть приложение</string>
+    <string name="close_app_question">Закрыть приложение?</string>
+    <string name="quick_logs_title">Быстрый доступ к логам</string>
+    <string name="quick_logs_desc">Моментальный просмотр логов операций</string>
+    <string name="session_installs_title">Установки в текущей сессии</string>
+    <string name="session_installs_desc">Запрошено установок в этой сессии: %1$d</string>
+    <string name="customization_title">Кастомизация</string>
+    <string name="theme_accent_title">Цвет акцента темы</string>
+    <string name="theme_accent_desc">Выберите неоновый акцент или Monet</string>
+    <string name="language_title">Язык</string>
+    <string name="language_current">Текущий: %1$s</string>
+    <string name="lang_sys">Системный</string>
+    <string name="lang_en">English</string>
+    <string name="lang_ru">Русский</string>
+    <string name="backup_dir_title">Папка резервных копий</string>
+    <string name="backup_dir_desc">Сохранять копии в: %1$s</string>
+    <string name="not_selected">Не выбрано</string>
+    <!-- GSI Hub -->
+    <string name="gsi_hub_title">GSI Hub</string>
+    <string name="gsi_hub_summary">Скачивание популярных GSI прошивок и свои ссылки</string>
+    <string name="gsi_catalog">Каталог</string>
+    <string name="custom_links">Свои ссылки</string>
+    <string name="add_link">Добавить ссылку</string>
+    <string name="link_url">Ссылка (Pixeldrain/SourceForge/TG)</string>
+    <string name="link_name">Название</string>
+    <string name="downloading">Скачивание %1$s...</string>
+    <string name="search">Поиск</string>
+    <string name="previous">Назад</string>
+    <string name="next">Вперед</string>
+</resources>

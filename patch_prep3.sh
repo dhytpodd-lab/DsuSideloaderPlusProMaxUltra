@@ -1,0 +1,1 @@
+sed -i 's/"zip" -> {/"zip" -> {\n                DSUInstallationSource.DsuPackage(userSelectedFileUri)\n            }\n            "7z" -> {\n                val result = prepare7z(userSelectedFileUri)\n                DSUInstallationSource.DsuPackage(result.first)\n            }/g' app/src/main/java/yangfentuozi/dsusideloaderplus/preparation/Preparation.kt
