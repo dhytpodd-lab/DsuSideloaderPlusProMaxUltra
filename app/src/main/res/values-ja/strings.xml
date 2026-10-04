@@ -1,116 +1,302 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!--
         Home screen
      -->
+
     <!-- Warning cards -->
-    <string name="device_unsupported_description">お使いのデバイスは動的パーティションに対応していません (DSU は動的パーティションが必須です)。</string>
-    <string name="setup_storage">ストレージの設定</string>
-    <string name="setup_storage_description">一時ファイルを保存するために必要な、アプリのストレージとして使用するフォルダを選択してください。\n\n新しいフォルダを選択または作成し、アクセスを許可してください。</string>
-    <string name="setup">設定</string>
+    <string name="unsupported">非対応</string>
+    <string name="device_unsupported_description">使用しているデバイスは動的パーティションに対応していません (DSU には動的パーティションが必要です)。</string>
+
+    <string name="setup_storage">ストレージのセットアップ</string>
+    <string name="setup_storage_description">アプリの保存先として使用するフォルダを選択する必要があります (一時ファイルの保存に必要です)。\n\n新しいフォルダへのアクセスを許可してください。</string>
+    <string name="setup">セットアップ</string>
+
     <string name="storage_warning">ストレージの警告</string>
-    <string name="continue_anyway">続行する</string>
-    <string name="missing_permission">権限がありません</string>
-    <string name="missing_permission_description">DSU Sideloader Plus Pro Max Ultra は logcat の読み取りを許可するための READ_LOGS 権限が必要です。\nこの権限は、インストールの進行状況を取得し、DSU インストール中のエラーを診断するために使用されます。 \n\n\n** この権限を付与するにはアプリの再起動が必要な場合があります。</string>
-    <string name="granting_permission">権限を付与するためにサービスを待機中です。しばらくお待ちください…</string>
+    <string name="storage_warning_description">空き容量が %1$s%% 未満です。インストールに失敗するため、空き容量を確保してください。</string>
+    <string name="continue_anyway">気にせずに続行</string>
+
+    <string name="missing_permission">権限が不足しています</string>
+    <string name="missing_permission_description">DSU Sideloader Plus Pro Max は、READ_LOGS の権限 (logcat の読み取りを可能にする権限) を要します。\nこの権限は、DSU のインストール進捗状況の取得、インストールのエラー診断に使用されます。\n\n** この権限を許可すると、アプリの再起動が必要になる場合があります。</string>
+    <string name="granting_permission">サービスからの権限の許可を待機中です。少々お待ちください…</string>
+
+    <string name="unlocked_bl_warn">アンロック済みのブートローダー</string>
+    <string name="unlocked_bl_warn_desc">サービスからの権限の許可を待機中です。少々お待ちください: \n- ブートローダーのアンロックが必要です。\n- デバイスの Stock ファームウェアを復元する手段が必須です。\n- 完全なバックアップを作成することを推奨します。\nこのアプリは開発者や上級者向けに作成されています。その点にご留意ください。</string>
+
     <!-- Installation card -->
-    <string name="select_gsi_info">インストールするファイルを選択</string>
-    <string name="dsu_already_installed">DSU は既にインストールされています。</string>
-    <string name="selected_file">選択したファイル</string>
+    <string name="select_gsi_info">インストールするファイルを選択してください</string>
+    <string name="dsu_already_installed">DSU のインストールはすでに存在します。</string>
+    <string name="manage_dsu_images">イメージを管理</string>
+    <string name="dsu_images">DSU イメージ</string>
+    <string name="installed_dsu_images">インストール済みの DSU イメージ</string>
+    <string name="installed_dsu_image">インストール済みの DSU イメージ</string>
+    <string name="no_installed_dsu_images">インストール済みの DSU イメージは見つかりませんでした。</string>
+    <string name="add_dsu_image">DSU </string>
+    <string name="add_dsu_image_description">インストール済みの DSU に、別のパーティションイメージを追加します。</string>
+    <string name="replace_dsu_image">置き換える</string>
+    <string name="export_dsu_image">エクスポート</string>
+    <string name="delete_dsu_image">削除</string>
+    <string name="dsu_image_name">イメージの名前</string>
+    <string name="dsu_image_prefix">イメージの接頭辞</string>
+    <string name="dsu_image_name_error">英数字、ドット、ハイフンまたはアンダースコアを使用した、固有の名前を使用してください。</string>
+
+    <string name="selected_file">選択済みのファイル</string>
     <string name="file_unsupported">非対応のファイル</string>
+
+    <string name="add">追加</string>
     <string name="clear">消去</string>
     <string name="install">インストール</string>
+    <string name="update">更新</string>
+
     <!-- Installation dialog -->
-    <string name="proceed_installation">インストールしますか？</string>
-    <string name="proceed_installation_description">以下のパラメータを使用してインストールします。</string>
+    <string name="proceed_installation">インストールを続行しますか？</string>
+    <string name="proceed_installation_description">インストールは、以下のパラメータを使用して行われます:</string>
+
     <!-- Discard installed DSU dialog -->
     <string name="discard_dsu_question">インストールを破棄しますか？</string>
-    <string name="dsu_already_installed_warning">破棄すると、インストールされた DSU にあるすべてのデータは削除されます。よろしいですか？</string>
+    <string name="dsu_already_installed_warning">インストール済みの DSU に含まれるすべてのデータは、破棄すると削除されます。よろしいですか？</string>
+    <string name="delete_dsu_image_question">DSU イメージを削除しますか？</string>
+    <string name="delete_dsu_image_warning">インストール済みの DSU イメージ「%1$s」が削除されます。これによってインストール済みの DSU が起動できなくなる可能性があります。</string>
+    <string name="add_dsu_image_question">DSU イメージを追加しますか？</string>
+    <string name="add_dsu_image_warning">選択したファイルは、インストール済みの DSU に新しいバッキングイメージとして追加されます。</string>
+    <string name="replace_dsu_image_question">DSU イメージを置き換えてインストールしますか？</string>
+    <string name="replace_dsu_image_warning">選択したファイルは、インストール済みの DSU 内の対象イメージと置き換わります。</string>
+
     <!-- Preparation -->
-    <string name="decompressing_gz">gz ファイルの展開中…</string>
-    <string name="decompressing_xz">xz ファイルの展開中…</string>
+    <string name="decompressing_gz">gz ファイルを展開中…</string>
+    <string name="decompressing_xz">xz ファイルを展開中…</string>
     <string name="compressing_to_gz">イメージファイルを準備中…</string>
     <string name="extracting_file">ファイルを展開中…</string>
     <string name="copying_file">ファイルをコピー中…</string>
     <string name="processing">処理中…</string>
+
     <!-- Installation -->
-    <string name="installation_prompt">インストールプロンプトを呼び出しました。ユーザーの確認を待機しています…</string>
-    <string name="creating_partition">%1$s パーティションを作成中</string>
-    <string name="installing_partition">%1$s パーティションを処理中…</string>
+    <string name="installation_prompt">インストールのプロンプトが起動しました。続行するにはユーザーの確認が必要です。</string>
+
+    <string name="creating_partition">%1$s のパーティションを作成中</string>
+    <string name="installing_partition">%1$s のパーティションを処理中…</string>
     <string name="installing">インストール中…</string>
+    <string name="loading_dsu_images">DSU イメージを読み込み中…</string>
+    <string name="adding_dsu_image">%1$s のイメージを追加中…</string>
+    <string name="exporting_dsu_image">%1$s のイメージをエクスポート中…</string>
+    <string name="replacing_dsu_image">%1$s のイメージを置き換え中…</string>
+    <string name="deleting_dsu_image">%1$s のイメージを削除中…</string>
+
     <!-- ADB install -->
-    <string name="require_adb_cmd_to_continue">準備が完了しました。インストールを続行するにはコマンドが必要です。</string>
-    <string name="see_commands">コマンドを表示</string>
+    <string name="require_adb_cmd_to_continue">準備が完了後にインストールを進めるためのコマンドが必要です。</string>
+    <string name="see_commands">コマンドを参照</string>
+
     <!-- Installation errors -->
+
     <!-- Already running a installed DSU -->
-    <string name="already_running_dsu">インストールされた DSU の実行時に DSU をインストールすることはできません。デバイスをデフォルトの OS へ再起動してください。</string>
+    <string name="already_running_dsu">インストール済みの DSU を実行中の状態で別の DSU をインストールすることは対応していません。デバイスを再起動し、デフォルトの OS を起動してください。</string>
+
     <!-- Already installed DSU card -->
-    <string name="discard_dsu_otg">DSU がすでにインストールされています。続行するには破棄してください。\n\n**DSU のインストールに保存されているすべてのデータは削除されます。</string>
+    <string name="discard_dsu_otg">DSU のインストールがすでに存在します。それを破棄して続行しますか？\n\n**DSU のインストール環境に保存されているすべてのデータが削除されます。</string>
     <string name="discarding">破棄中…</string>
     <string name="discard_dsu">DSU を破棄</string>
+
     <!-- Allocation error card -->
-    <string name="allocation_error">割り当てエラー</string>
-    <string name="allocation_error_description">SD カードへの割り当てに失敗しました。以下の解決策を試してください:\n - DSU Sideloader Plus Pro Max Ultra Magisk モジュールをインストールする\n - SD カードのマウントを解除する (オプションで常にセットするよう設定できます)</string>
-    <string name="allocation_error_action">SD カードのマウントを解除して再試行する</string>
+    <string name="allocation_error">アロケーションエラー</string>
+    <string name="allocation_error_description">SD カードへの割り当てが上手くいってません。いくつか試せる修正方法があります:\n - DSU Sideloader Plus Pro Max Ultra の Magisk モジュールをインストールする。\n - SD カードのアンマウント (このオプションは設定で永続的に有効化することができます) を使用する。</string>
+    <string name="allocation_error_action">SD をアンマウントと再試行</string>
+
     <!-- No free storage error card -->
     <string name="storage_error">ストレージエラー</string>
-    <string name="storage_error_description">インストールを続けるために少なくとも%1$s%%の空き容量が必要です。空き容量を増やして再試行してください。</string>
+    <string name="storage_error_description">Android でインストールを行うには、少なくとも %1$s%% の空きストレージ容量が必要です。空き容量を確保後に再度お試しください。</string>
+
     <!-- Filesystem features not found error card -->
-    <string name="fs_features_error">FS 機能が利用できません</string>
-    <string name="fs_features_error_description">お使いのカーネルは、GSI デーモンが想定しているものとは違うパスに F2FS を登録しています。以下の解決策を試してください:\n - DSU Sideloader Plus Pro Max Ultra Magisk モジュールをインストールする\n - カーネルを変更する</string>
+    <string name="fs_features_error">FS 機能は利用できません</string>
+    <string name="fs_features_error_description">使用しているカーネルは、GSI デーモンが想定しているものと異なるパスで f2fs を登録している可能性があります。いくつか試せる修正方法があります:\n - DSU Sideloader Plus Pro Max Ultra の Magisk モジュールをインストールする。\n - カーネルを変更する。</string>
+
     <!-- SELinux error card -->
     <string name="selinux_error">SELinux エラー</string>
-    <string name="selinux_error_description">SELinux により DSU のインストールが失敗しているようです。以下の解決策を試してください:\n - DSU Sideloader Plus Pro Max Ultra Magisk モジュールをインストールする\n - SD カードを使用している場合は、マウントを解除する (設定にオプションがあります).\n - SELinux を Permissive にする (非推奨、デバイスのセキュリティが低下します)</string>
-    <string name="selinux_error_action">Permissive にして再試行</string>
+    <string name="selinux_error_description">SELinux による拒否が原因で DSU のインストールが妨げられているようです。いくつか試せる修正方法があります:\n - DSU Sideloader Plus Pro Max Ultra の Magisk モジュールをインストールする。\n - SD カードを使用している場合は、アンマウントをお試しください (設定メニューにそのためのオプションがあります)。\n - SELinux を Permissive に変更する (デバイスのセキュリティが低下するため、非推奨)。</string>
+    <string name="selinux_error_action">Permissive で再試行</string>
+
     <!-- Extents error card -->
     <string name="extents_error_title">エクステントエラー</string>
-    <string name="extents_error_description">Android 10 デバイスでは、イメージ/ファイルシステムは 512 以上のエクステントを必要とします。以下の解決策を試してください:\n - DSU Sideloader Plus Pro Max Ultra Magisk モジュールをインストールする</string>
+    <string name="extents_error_description">Android 10 搭載デバイスでは、イメージやファイルシステムが 512 個を超えるエクステントを持つ必要があります。これを解決するために試せる修正方法がいくつかあります:\n - DSU Sideloader Plus Pro Max Ultra の Magisk モジュールをインストールする。</string>
+
     <!-- Other errors card -->
-    <string name="failed_create_partition">パーティション %1$s の作成に失敗しました。</string>
+    <string name="failed_create_partition">%1$s のパーティションの作成に失敗しました。</string>
+    <string name="unknown_error">不明なエラーです。</string>
+    <string name="dsu_image_operation_failed">DSU イメージの操作に失敗しました: %1$s</string>
+    <string name="error">エラー</string>
+    <string name="try_again">再試行</string>
+    <string name="view_logs">ログを表示</string>
+    <string name="installation_canceled">インストールをキャンセルしました。</string>
+
+    <!-- Cancel installation dialog -->
+    <string name="cancel_installation_question">インストールをキャンセルしますか？</string>
+    <string name="cancel_installation_description">これまでの進捗がすべて失われますが、よろしいですか？</string>
+
+    <!-- Installation finished card -->
+    <string name="installation_finished_rootless">イメージのインストールが完了しました。通知を確認して動的システムを起動してください。</string>
+    <string name="installation_finished">インストールが完了しました。</string>
+    <string name="reboot_into_dsu">DSU で再起動</string>
+
+    <!-- Userdata card -->
+    <string name="userdata_size">ユーザーデータのサイズ</string>
+    <string name="userdata_size_info">GB 単位のサイズ</string>
+    <string name="allowed_userdata_allocation">割り当て可能な最大数: %1$sGB</string>
+    <string name="preserve_userdata">ユーザーデータを保持</string>
+    <string name="preserve_userdata_desc">DSU の更新時に既存のユーザーデータを保持します</string>
+
+    <!-- Image size card -->
+    <string name="image_size">イメージのサイズ</string>
+    <string name="image_size_info">バイト単位のサイズ</string>
+    <string name="not_recommended_option">このオプションは強く推奨しません！</string>
+
+    <!-- Image size dialog -->
+    <string name="dialog_image_size">イメージのサイズを設定しますか？</string>
+    <string name="dialog_image_size_description">DSU Sideloader Plus Pro Max Ultra がこのパラメータを自動的に設定します。手動でイメージサイズを変更することは強く推奨しません。</string>
+    <string name="set_anyway">気にせず設定</string>
+
+    <!-- What is DSU card -->
+    <string name="what_is_dsu">DSU とは何ですか？</string>
+    <string name="what_is_dsu_description">DSU (Dynamic System Updates) は、Android 10 で導入された機能で、開発者がデバイスのパーティションを変更することなく Android システムイメージをテストできるようにするものです。Android 11 では、DSU によって複数のパーティションを置き換えることも可能になりました。</string>
+    <string name="view_docs">ドキュメント</string>
+    <string name="learn_more">詳細</string>
+
+    <!--
+        Settings screen
+    -->
+
+    <string name="settings">設定</string>
+
+    <string name="experimental_feature">試験的な機能</string>
+    <string name="experimental_feature_description">この機能は試験的であり、動作が不安定になる可能性があります。よろしいですか？</string>
+
+    <string name="builtin_installer">内蔵インストーラー</string>
+    <string name="builtin_installer_description">より高速な内部 API を使用してイメージを直接インストールします</string>
+    <string name="requires_root">root 権限が必要です</string>
+
+    <string name="unmount_sd_title">SD をアンマウント</string>
+    <string name="unmount_sd_description">インストール時に SD カードを一時的にアンマウントします</string>
+
+    <string name="warning_storage_check_title">警告</string>
+    <string name="warning_storage_check_description">DSU のインストールでデバイス上の空き容量が確保されますが、ストレージの確認を無効にするとエラーが発生する可能性があります。\nこのオプションは推奨されません。内容を十分に理解している場合のみ、続行してください。</string>
+
+    <string name="storage_check_title">ストレージの確認を無効</string>
+    <string name="storage_check_description">ユーザーデータストレージの確認を無効にします (推奨されません)。</string>
+
+    <string name="full_logcat_logging_title">完全な logcat ログ</string>
+    <string name="full_logcat_logging_description">ログをフィルターなしで記録するため、アプリのパフォーマンスが低下する可能性があります。</string>
+
+    <string name="keep_screen_on">画面を常時 ON にする</string>
+
+    <string name="developer_options">開発者向けオプション</string>
+
+    <string name="other">その他</string>
+
+    <string name="operation_mode">操作モード</string>
+
+    <string name="about">アプリについて</string>
+    <string name="about_description">クレジット、ライブラリとその他…</string>
+
     <!--
         About screen
     -->
-    <string name="role_design_icon">デザイン参照、アプリアイコン</string>
+
+    <string name="version_info">バージョン %1$s (%2$d)</string>
+    <string name="check_updates_title">更新を確認</string>
+    <string name="check_updates_text_idle">タップで確認</string>
+    <string name="check_updates_text_found">%1$s の新しいバージョンが見つかりました</string>
+    <string name="check_updates_text_updated">最新のバージョンを実行中</string>
+    <string name="changelog">変更履歴</string>
+    <string name="download">ダウンロード</string>
+
+    <string name="application">アプリ</string>
+
+    <string name="developer_options_enabled">開発者向けオプションが有効</string>
+    <string name="developer_options_disabled">開発者向けオプションが無効</string>
+
+    <string name="github_repo">GitHub リポジトリ</string>
+    <string name="github_repo_description">GitHub 上のソースコード</string>
+
+    <string name="collaborators">貢献者</string>
+
+    <string name="libraries_title">ライブラリ</string>
+    <string name="libraries_description">使用しているライブラリ</string>
+
+    <string name="role_developer">開発者</string>
+    <string name="role_fork_developer">フォークの開発者</string>
+    <string name="role_original_developer">元の開発者</string>
+    <string name="role_design_icon">デザインリファレンスとアイコン</string>
+
     <string name="translators_title">翻訳者</string>
+
+    <string name="translators_list" comment="Hello translator, since you have translated our app, feel free to put your name inside &quot;translators_list&quot;, it will be shown on about screen.&#10;If there is more than one translator, append names and separate each one by using a comma, like:&#10;Collaborator 1, Collaborator 2, Collaborator 3">Re*Index.(ot_inc)</string>
+
     <string name="contributors_title">貢献者</string>
-    <string name="contributors_text">このプロジェクトを支援した人</string>
+    <string name="contributors_text">このプロジェクトに協力してくれた方々</string>
+
     <!--
         ADB screen
     -->
-    <string name="adb_how_to_adb_shell">root 化されていないデバイスでインストールを開始するには、adb シェルでこのコマンドを実行する必要があります。</string>
-    <string name="adb_how_to_shell">PC なしで adb シェルを実行している場合（例：LADB、Shizuku の Rish、WebADB、Bugjaeger..）、代わりにこのコマンドを実行する必要があります:</string>
-    <string name="adb_how_to_done">完了したら、通知を確認してインストール状況を確認してください。このアプリは閉じて大丈夫です。</string>
+
+    <string name="adb_how_to_adb_shell">root 化されていないデバイスでインストールを開始するには、adb shell 上でこのコマンドを実行する必要があります:</string>
+    <string name="adb_how_to_shell">PC を使用せずに adb shell を実行する場合 (例: LADB、Shizuku の Rish、WebADB、Bugjaeger など) は代わりにこのコマンドを実行してください:</string>
+    <string name="adb_how_to_done">完了後に通知を確認してインストールの進捗状況を確認してください。このアプリを閉じることもできます。</string>
+
     <string name="copy_text">テキストをコピー</string>
     <string name="copied">コピーしました</string>
+
     <!--
         View logs screen
     -->
+
     <string name="installation_logs">インストールログ</string>
     <string name="save_logs">ログを保存</string>
     <string name="saved_logs">ログを保存しました！</string>
+
     <!--
         Generic and multipurpose strings
      -->
+
     <string name="no">いいえ</string>
     <string name="yes">はい</string>
     <string name="ok">OK</string>
-    <string name="grant">許可する</string>
-    <string name="refuse">拒否する</string>
-    <string name="proceed">続行する</string>
+
+    <string name="grant">許可</string>
+    <string name="refuse">拒否</string>
+    <string name="proceed">進む</string>
     <string name="cancel">キャンセル</string>
     <string name="close">閉じる</string>
     <string name="mreturn">戻る</string>
+
     <string name="installation">インストール</string>
-    <string name="discard">破棄する</string>
+    <string name="discard">破棄</string>
+
     <string name="close_app">アプリを閉じる</string>
     <string name="close_app_question">アプリを閉じますか？</string>
-
-    <!--
-        Hello translator, since you have translated our app
-        feel free to put your name inside "translators_list", it will be shown on about screen.
-
-        If there is more than one translator, append names and separate each one by using a comma, like:
-        Collaborator 1, Collaborator 2, Collaborator 3
-    -->
-    <string name="translators_list" comment="translators_list&#10;Hello translator, since you have translated our app, feel free to put your name inside &quot;translators_list&quot;, it will be shown on about screen.&#10;If there is more than one translator, append names and separate each one by using a comma, like:&#10;Collaborator 1, Collaborator 2, Collaborator 3">AndroPlus</string>
+    <string name="quick_logs_title">ログへのクイックアクセス</string>
+    <string name="quick_logs_desc">操作のログを即座に表示します</string>
+    <string name="session_installs_title">現在のセッションでのインストール</string>
+    <string name="session_installs_desc">このセッションで要求されたインストール: %1$d</string>
+    <string name="customization_title">カスタマイズ</string>
+    <string name="theme_accent_title">テーマアクセントカラー</string>
+    <string name="theme_accent_desc">お好みのネオンアクセントまたは Monet を選択してください</string>
+    <string name="language_title">言語</string>
+    <string name="language_current">現在: %1$s</string>
+    <string name="lang_sys">システムのデフォルト</string>
+    <string name="lang_en">英語</string>
+    <string name="lang_ru">ロシア語</string>
+    <string name="lang_ja">日本語</string>
+    <string name="backup_dir_title">バックアップディレクトリ</string>
+    <string name="backup_dir_desc">バックアップの保存先: %1$s</string>
+    <string name="not_selected">未選択</string>
+    <!-- GSI Hub -->
+    <string name="gsi_hub_title">GSI Hub</string>
+    <string name="gsi_hub_summary">人気の GSI ROM やカスタムリンクでダウンロードします</string>
+    <string name="gsi_catalog">カタログ</string>
+    <string name="custom_links">カスタムリンク</string>
+    <string name="add_link">リンクを追加</string>
+    <string name="link_url">URL (Pixeldrain/SourceForge/TG)</string>
+    <string name="link_name">名前</string>
+    <string name="downloading">%1$s をダウンロード中...</string>
+    <string name="search">検索</string>
+    <string name="previous">前へ</string>
+    <string name="next">次へ</string>
 </resources>
